@@ -25,7 +25,7 @@ numOfDaysInNextMonth = numOfDaysInNextMonth.getDate();
 
 
 // convert alphabet to number function
-export const alphabetToNumber = (words) => {
+const alphabetToNumber = (words) => {
   let sum = 0
   const array = []
   for (let alphabet of words.split('')) {
@@ -36,7 +36,7 @@ export const alphabetToNumber = (words) => {
   return {sum, array};
 };
 
-export const numberToAlphabet = (number) => {
+const numberToAlphabet = (number) => {
   return String.fromCharCode(number + 65);
 };
 
