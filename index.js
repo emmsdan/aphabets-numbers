@@ -29,7 +29,7 @@ const alphabetToNumber = (words) => {
   let sum = 0
   const array = []
   for (let alphabet of words.split('')) {
-    const digit = alphabet.charCodeAt(0) - (65+31)
+    const digit = alphabet.toLowerCase().charCodeAt(0) - (65+31)
     sum += digit
     array.push({digit, alphabet  })    
   }
